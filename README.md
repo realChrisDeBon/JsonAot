@@ -23,7 +23,7 @@ updated with the necessary including statement.
 *Note:* Manually add your project's namespace into the JSONHandler.cs file so it can access class references!
 
 **2. Implement functions** JSONHandler.cs has two built in functions which provide a very
-familiar syntax with `Newtonsoft's and System.Text.Json's conversion syntax. Implement these
+familiar syntax with Newtonsoft's and System.Text.Json's conversion syntax. Implement these
 function for your project's serialization and deserialization, and be sure to tag all classes
 that will be passed to these function with `[JsonAot]`
 ```csharp
@@ -66,3 +66,5 @@ MessageExample deserializedmessage = Deserialize<MessageExample>(serialized_obje
 ```
 
 *Note:* JsonAot is meant to be ran as a binary in the project root, it is not a working NuGet package. Download and compile the binary, or check the release for a current working download.
+
+<sup>If you don't want to compile it yourself, there's a working x64 release</sup>
